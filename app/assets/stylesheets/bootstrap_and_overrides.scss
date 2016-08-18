@@ -1,0 +1,80 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  color: black;
+  font-family: 'Open Sans', 'Verdana', 'Helvetica', sans-serif;
+  letter-spacing: 1px;
+}
+
+#heading {
+  text-align: center;
+  font-weight: bold;
+}
+
+.my-school {
+    width: 400px;
+    display: block;
+}
+
+.my-description {
+    width: 800px;
+    height: 100px;
+    display: block;
+}
+
+.my-link {
+    display: block;
+    width: 300px;
+}
+
+.dropdown{
+  margin-top: 10px;
+}
+
+.my-skill {
+    display: block;
+    width: 300px;
+}
+
+.my-rating {
+    display: block;
+    width: 300px;
+}
+
+.navbar-default {
+  background-color: #CB0D0F;
+  border: 0px solid transparent;
+//   display: inline-block;
+//   float: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+  margin-top: 7px;
+  color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #800000;
+}
+.navbar-default .navbar-nav > li > a:focus {
+  color: white;
+}
+
+.navbar-default .navbar-nav .link {
+  margin-top: 12px;
+}
+
+.navbar-default .navbar-nav .form-group {
+  padding-top: 6px;
+}
+
+.navbar-form .form-control {
+  padding: 6px 20px;
+  width: 200px;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: #CB0D0F;
+  color: white;
+}

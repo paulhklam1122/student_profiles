@@ -1,0 +1,53 @@
+<% if current_user.approved || current_user.is_admin? %>
+<div class="container edit-heading">
+  <h1>Edit Your Information</h1>
+</div>
+
+<div class="container">
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#basicinfo">Basic Information</a></li>
+    <li><a data-toggle="tab" href="#accountinfo">Account Information</a></li>
+    <li><a data-toggle="tab" href="#links">Links</a></li>
+    <li><a data-toggle="tab" href="#projects">Projects</a></li>
+    <li><a data-toggle="tab" href="#education">Education</a></li>
+    <li><a data-toggle="tab" href="#experience">Experience</a></li>
+    <li><a data-toggle="tab" href="#skills">Skills</a></li>
+  </ul>
+</div>
+
+<div class="container" >
+    <div class="tab-content">
+      <div id="basicinfo" class="tab-pane fade in active">
+        <%= render "/profiles/basic" %>
+      </div>
+      <div id="accountinfo" class="tab-pane fade">
+        <%= render "/users/form" %>
+      </div>
+      <div id="links" class="tab-pane fade">
+        <%= render "links/links", links: @links %>
+        <% if @links.blank? %>
+        <%= render "links/form" %>
+        <% end %>
+      </div>
+      <div id="projects" class="tab-pane fade">
+        <%= render "projects/projects", projects: @projects %>
+        <%= render "projects/form" %>
+      </div>
+      <div id="education" class="tab-pane fade">
+        <%= render "educations/educations", educations: @educations %>
+        <%= render "/educations/form" %>
+      </div>
+      <div id="experience" class="tab-pane fade">
+        <%= render "experiences/experiences", experiences: @experiences %>
+        <%= render "experiences/form" %>
+      </div>
+      <div id="skills" class="tab-pane fade">
+        <%= render "skills/skills", skills: @skills %>
+        <%= render "skills/form" %>
+      </div>
+    </div>
+  </div>
+</div>
+<% else %>
+  <h2>Please wait to be approved</h2>
+<% end %>

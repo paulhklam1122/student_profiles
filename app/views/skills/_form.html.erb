@@ -1,0 +1,9 @@
+
+<%= simple_form_for [@user, @profile, @skill] do |f| %>
+<%= f.input :title, :label => "Add a Skill", input_html: {class:"my-skill"}  %>
+<br>
+<%= f.input :rating, :label => "Rate Your Skill", input_html: {class:"my-rating"} %>
+<hr>
+<%= f.button :submit, class: "btn btn-primary" %>
+<% end %>
+<br>

@@ -1,0 +1,130 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require jquery.jcrop
+ *= require font-awesome
+ *= require jquery.jcrop
+
+ */
+
+ body {
+   padding-top: 85px;
+   margin-left: 0px;
+ }
+ .btn-custom {
+   background: #CB0D0F;
+ }
+
+
+
+ #user-name {
+  font-weight: bold;
+}
+
+.container {
+   width: 80%;
+   margin-bottom: 20px;
+}
+
+ .avatar {
+   display: inline;
+   width: 250px;
+   height: 250px;
+   float: left;
+   border: 1px solid grey;
+   padding: 0
+ }
+
+ .avatar img {
+   width: 100%;
+   height: 100%;
+   padding: 0
+ }
+
+ .name-pitch {
+   display: inline;
+   float: right;
+   width: 73%;
+ }
+
+ footer {
+   padding: 25px 0;
+   text-align: center;
+   position: relative;
+   width: 100%;
+   background: #2A2A2A;
+   color: #fff;
+   overflow: hidden;
+}
+
+footer a {
+  font-size: 15px;
+  color: #555;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+ /*footer span.copyright {
+   line-height: 40px;
+   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   text-transform: uppercase;
+   text-transform: none;
+ }
+ footer ul.quicklinks {
+   margin-bottom: 0;
+   line-height: 40px;
+   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   text-transform: uppercase;
+   text-transform: none;
+ }*/
+.short-pitch {
+    padding-right: 15px;
+    padding-left: 15px;
+    min-height: 80px;
+}
+
+
+.tab-show-panel {
+ min-height: 200px;
+}
+
+#flash-notice {
+  color: white;
+  width: 100%;
+  height: 15px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+#flash-alert {
+  color: white;
+  width: 100%;
+  height: 15px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.link-icon {
+  color: #333333;
+  margin-left: 15px;
+  font-size: 40px;
+  margin-right: 15px;
+}
+.content {
+ min-height: 500px;
+}

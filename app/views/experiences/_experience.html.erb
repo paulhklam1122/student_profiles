@@ -1,0 +1,13 @@
+<p>Job Title: <%= experience.job_title %></p>
+<p>Company: <%= experience.company %></p>
+<div>
+<p>Start Date: <%= experience.start_date %></p> -
+<% if experience.current? %>
+  <p>Present</p>
+<% else %>
+  <p>End Date: <%= experience.end_date %></p>
+<% end %>
+</div>
+<p>Description: <%= experience.description %></p>
+
+<hr />
