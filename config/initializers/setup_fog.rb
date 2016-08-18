@@ -6,7 +6,7 @@ CarrierWave.configure do |config|
     aws_secret_access_key: ENV['AWSSecretKey'],
     region:                'us-west-2'
   }
-  config.fog_directory  = 'student-profile-awsome-team'
+  config.fog_directory  = 'paul-student-profiles'
   config.fog_public     = false                                        # optional, defaults to true
   config.fog_attributes = { 'Cache-Control' => "max-age=#{365.day.to_i}" } # optional, defaults to {}
 end
